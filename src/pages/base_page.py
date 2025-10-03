@@ -17,9 +17,9 @@ from .actions_navegacion import NavigationActions
 
 # Asegúrate de importar la clase de localizadores
 from src.locators.locator_home import HomeLocatorsPage
-from src.locators.locator_registro import RegistroLocatorsPage
+"""from src.locators.locator_registro import RegistroLocatorsPage
 from src.locators.locator_login import LoginLocatorsPage
-from src.locators.locator_dashboard import DasboardLocatorsPage
+from src.locators.locator_dashboard import DasboardLocatorsPage"""
 
 class BasePage:
     """
@@ -62,9 +62,9 @@ class BasePage:
         
         # --- Instancia de la clase de localizadores de la página de inicio ---
         self.home = HomeLocatorsPage(self.page)
-        self.registro = RegistroLocatorsPage(self.page)
+        """self.registro = RegistroLocatorsPage(self.page)
         self.login = LoginLocatorsPage(self.page)
-        self.dashboard = DasboardLocatorsPage(self.page)
+        self.dashboard = DasboardLocatorsPage(self.page)"""
         
     #2- Función para generar el nombre de archivo con marca de tiempo
     def _generar_nombre_archivo_con_timestamp(self, prefijo):

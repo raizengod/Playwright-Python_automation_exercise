@@ -105,6 +105,9 @@ def load_settings(env_name=os.getenv("ENVIRONMENT", "qa")):
         # --- Rutas de Evidencia ---
         "EVIDENCE_BASE_DIR": EVIDENCE_BASE_DIR,
         "LOGGER_DIR": LOGGER_DIR,
+        "VIDEO_DIR": VIDEO_DIR,
+        "TRACEVIEW_DIR": TRACEVIEW_DIR,
+        "SCREENSHOT_DIR": SCREENSHOT_DIR,
         # Puedes añadir aquí las demás rutas si son necesarias en las pruebas
         
         # --- Rutas de Datos ---
