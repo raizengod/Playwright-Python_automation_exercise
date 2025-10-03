@@ -39,16 +39,16 @@ LOGGER_DIR = os.path.join(EVIDENCE_BASE_DIR, "log")
 
 # --- Nueva ruta para archivos fuente ---
 # Se creará '.../.../src/test/archivos_data_escritura'
-SOURCE_FILES_DIR_DATA_WRITE = os.path.join(PROJECT_ROOT, "test", "files", "files_data_write")
+SOURCE_FILES_DIR_DATA_WRITE = os.path.join(PROJECT_ROOT, "tests", "files", "files_data_write")
 
 # Se creará '.../.../src/test/archivos_data_fuente'
-SOURCE_FILES_DIR_DATA_SOURCE = os.path.join(PROJECT_ROOT, "test", "files", "files_data_source")
+SOURCE_FILES_DIR_DATA_SOURCE = os.path.join(PROJECT_ROOT, "tests", "files", "files_data_source")
 
 # Se creará '.../.../src/test/archivos_upload'
-SOURCE_FILES_DIR_UPLOAD = os.path.join(PROJECT_ROOT, "test", "files", "files_upload")
+SOURCE_FILES_DIR_UPLOAD = os.path.join(PROJECT_ROOT, "tests", "files", "files_upload")
 
 # Se creará '.../.../src/test/archivos_download'
-SOURCE_FILES_DIR_DOWNLOAD = os.path.join(PROJECT_ROOT, "test", "files", "files_download")
+SOURCE_FILES_DIR_DOWNLOAD = os.path.join(PROJECT_ROOT, "tests", "files", "files_download")
 
 # Función para asegurar que los directorios existan
 def ensure_directories_exist():

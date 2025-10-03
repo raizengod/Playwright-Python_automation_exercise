@@ -8,10 +8,10 @@ from datetime import datetime
 import os
 from typing import Generator
 import logging
-from src.utils.config import load_settings, ensure_directories_exist
-from src.utils.logger import setup_logger
-from src.pages.base_page import BasePage
-from src.locators.locator_obstaculoPantalla import ObstaculosLocators
+from utils.config import load_settings, ensure_directories_exist
+from utils.logger import setup_logger
+from pages.base_page import BasePage
+from locators.locator_obstaculoPantalla import ObstaculosLocators
 
 # 1. Aseguramos que los directorios existan (incluyendo 'log')
 ensure_directories_exist() 

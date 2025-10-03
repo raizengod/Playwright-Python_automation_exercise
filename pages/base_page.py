@@ -16,7 +16,7 @@ from .actions_teclado import KeyboardActions
 from .actions_navegacion import NavigationActions
 
 # Asegúrate de importar la clase de localizadores
-from src.locators.locator_home import HomeLocatorsPage
+from locators.locator_home import HomeLocatorsPage
 """from src.locators.locator_registro import RegistroLocatorsPage
 from src.locators.locator_login import LoginLocatorsPage
 from src.locators.locator_dashboard import DasboardLocatorsPage"""
