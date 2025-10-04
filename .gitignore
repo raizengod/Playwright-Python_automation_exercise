@@ -11,4 +11,4 @@ traceview_*
 playwright_reporte*
 *.log
 environments
-reporting
+reports

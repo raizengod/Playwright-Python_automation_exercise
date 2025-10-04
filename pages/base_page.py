@@ -15,11 +15,14 @@ from .actions_dropdowns import DropdownActions
 from .actions_teclado import KeyboardActions
 from .actions_navegacion import NavigationActions
 
+from utils.logger import setup_logger
+from utils.config import LOGGER_DIR, SCREENSHOT_DIR
+
 # Asegúrate de importar la clase de localizadores
 from locators.locator_home import HomeLocatorsPage
-"""from src.locators.locator_registro import RegistroLocatorsPage
-from src.locators.locator_login import LoginLocatorsPage
-from src.locators.locator_dashboard import DasboardLocatorsPage"""
+"""from src.locator.locator_registro import RegistroLocatorsPage
+from src.locator.locator_login import LoginLocatorsPage
+from src.locator.locator_dashboard import DasboardLocatorsPage"""
 
 class BasePage:
     """
@@ -29,7 +32,7 @@ class BasePage:
     """
 
     #1- Creamos una función incial 'Constructor'-----ES IMPORTANTE TENER ESTE INICIADOR-----
-    def __init__(self, page: Page, config_data: dict, logger: logging.Logger):
+    def __init__(self, page: Page):
         """
         Inicializa la clase Funciones_Globales con un objeto Page de Playwright.
 
@@ -38,8 +41,14 @@ class BasePage:
                          del navegador activa.
         """
         self.page = page
-        self.logger = logger
-        self.config_data = config_data
+        self.logger = setup_logger(
+            name='AutomationFramework', 
+            console_level=logging.INFO, 
+            file_level=logging.DEBUG, 
+            log_dir=LOGGER_DIR
+        )
+        
+        self.logger.debug("DEBUG: Logger 'AutomationFramework' inicializado.")
         
         # --- Banderas para manejo de eventos de diálogo ---
         self._alerta_detectada = False
